@@ -16,7 +16,7 @@ class Textarea(BaseElement):
         return super().get_locator(nth, **kwargs).locator('textarea').first
 
 
-    def get_raw_locator(self, nth: int = 0, **kwargs) -> Locator:
+    def get_raw_locator(self, nth: int = 0, **kwargs) -> str:
         return super().get_locator(nth, **kwargs).locator('textarea').first
 
     def fill(self, value: str, nth: int = 0, **kwargs):
